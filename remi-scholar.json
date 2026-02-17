@@ -1,0 +1,25 @@
+{
+  "journal": "Revista Multidisciplinar Integrada - REMI",
+  "issn": "3085-9727",
+  "institution": "Centro Universitário AlfaUnipac",
+  "scholar_id": "Ay0JF64AAAAJ",
+  "metrics": {
+    "total_citations": 2187,
+    "citations_since_2021": 2085,
+    "h_index": 18,
+    "h_index_since_2021": 17,
+    "i10_index": 40,
+    "i10_index_since_2021": 35
+  },
+  "yearly_citations": {
+    "2019": 12,
+    "2020": 18,
+    "2021": 35,
+    "2022": 78,
+    "2023": 215,
+    "2024": 480,
+    "2025": 1190,
+    "2026": 159
+  },
+  "last_updated": "2026-02-17"
+}
