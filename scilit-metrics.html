@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,20 +18,9 @@
       --muted2:#94a3b8;
       --accent:#1f77b4;
       --badgeBg:#f1f5f9;
-      --shadow:0 1px 0 rgba(15,23,42,.04),
-               0 6px 18px rgba(15,23,42,.06);
+      --shadow: 0 1px 0 rgba(15,23,42,.04), 0 6px 18px rgba(15,23,42,.06);
     }
-
-    *{
-      box-sizing:border-box;
-    }
-
-    body{
-      margin:0;
-      background:transparent;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
-    }
-
+    body{margin:0;background:transparent;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;}
     .card{
       background:var(--bg);
       border:1px solid var(--border);
@@ -40,7 +28,6 @@
       box-shadow:var(--shadow);
       padding:12px 12px 10px;
     }
-
     .top{
       display:flex;
       justify-content:space-between;
@@ -48,33 +35,20 @@
       gap:10px;
       margin-bottom:10px;
     }
-
     .brand{
       display:flex;
       align-items:center;
       gap:8px;
       min-width:0;
     }
-
     .icon{
-      width:28px;
-      height:28px;
-      border-radius:10px;
-      display:grid;
-      place-items:center;
-      background:linear-gradient(
-        135deg,
-        rgba(31,119,180,.14),
-        rgba(31,119,180,.04)
-      );
+      width:28px;height:28px;border-radius:10px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, rgba(31,119,180,.14), rgba(31,119,180,.04));
       border:1px solid rgba(31,119,180,.18);
       flex:0 0 auto;
     }
-
-    .titleWrap{
-      min-width:0;
-    }
-
+    .titleWrap{min-width:0}
     .title{
       font-size:13px;
       font-weight:800;
@@ -85,7 +59,6 @@
       overflow:hidden;
       text-overflow:ellipsis;
     }
-
     .subtitle{
       margin-top:2px;
       font-size:10px;
@@ -95,7 +68,6 @@
       overflow:hidden;
       text-overflow:ellipsis;
     }
-
     .badge{
       font-size:10px;
       font-weight:700;
@@ -113,15 +85,13 @@
       margin-bottom:8px;
       flex-wrap:wrap;
     }
-
     .stat{
       flex:1 1 120px;
       border:1px solid var(--border);
       border-radius:12px;
       padding:8px 10px;
-      background:linear-gradient(180deg,#fff,#fafafa);
+      background:linear-gradient(180deg, #fff, #fafafa);
     }
-
     .k{
       font-size:10px;
       font-weight:700;
@@ -130,7 +100,6 @@
       text-transform:uppercase;
       margin-bottom:3px;
     }
-
     .v{
       font-size:16px;
       font-weight:800;
@@ -144,7 +113,6 @@
       padding:8px 10px 6px;
       background:#fff;
     }
-
     .sparkHead{
       display:flex;
       justify-content:space-between;
@@ -152,7 +120,6 @@
       gap:10px;
       margin-bottom:6px;
     }
-
     .sparkLabel{
       font-size:10px;
       font-weight:700;
@@ -163,18 +130,13 @@
       overflow:hidden;
       text-overflow:ellipsis;
     }
-
     .sparkMini{
       font-size:10px;
       font-weight:700;
       color:var(--muted2);
       white-space:nowrap;
     }
-
-    canvas{
-      width:100% !important;
-      height:58px !important;
-    }
+    canvas{width:100% !important;height:58px !important;}
 
     .foot{
       margin-top:8px;
@@ -185,380 +147,142 @@
       font-size:10px;
       color:var(--muted2);
     }
-
-    a{
-      color:inherit;
-      text-decoration:none;
-    }
-
-    a:hover{
-      text-decoration:underline;
-    }
+    a{color:inherit;text-decoration:none}
+    a:hover{text-decoration:underline}
   </style>
 </head>
-
 <body>
 
 <div class="card">
-
   <div class="top">
-
     <div class="brand">
-
       <div class="icon" aria-hidden="true">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M4 19V5"
-            stroke="rgba(31,119,180,.75)"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M4 19H20"
-            stroke="rgba(31,119,180,.55)"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M6.5 15.5L10 12l3 2.2 5-6.2"
-            stroke="rgba(31,119,180,.95)"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+          <path d="M4 19V5" stroke="rgba(31,119,180,.75)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M4 19H20" stroke="rgba(31,119,180,.55)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M6.5 15.5L10 12l3 2.2 5-6.2" stroke="rgba(31,119,180,.95)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-
       <div class="titleWrap">
         <p class="title">Metrics Dashboard</p>
-        <div class="subtitle">
-          Scilit • REMI
-        </div>
+        <div class="subtitle">Scilit • REMI</div>
       </div>
-
     </div>
-
-    <div class="badge">
-      MDPI-style
-    </div>
-
+    <div class="badge">MDPI-style</div>
   </div>
 
-
   <div class="stats">
-
     <div class="stat">
       <div class="k">h5-index</div>
       <div class="v" id="h5">—</div>
     </div>
-
     <div class="stat">
       <div class="k">MCM</div>
       <div class="v" id="mcm">—</div>
     </div>
-
   </div>
-
 
   <div class="sparkBox">
-
     <div class="sparkHead">
-
-      <div class="sparkLabel">
-        Monthly Citation Metric
-      </div>
-
-      <div class="sparkMini" id="lastPoint">
-        —
-      </div>
-
+      <div class="sparkLabel">Monthly Citation Metric</div>
+      <div class="sparkMini" id="lastPoint">—</div>
     </div>
-
     <canvas id="spark"></canvas>
-
   </div>
-
 
   <div class="foot">
-
-    <div>
-      Atualização:
-      <span id="updated">—</span>
-    </div>
-
-    <div>
-      <a
-        href="https://www.scilit.com/sources/019f25e40c1872ae9ebc9488e577dd65"
-        target="_blank"
-        rel="noopener"
-      >
-        Scilit - Click here
-      </a>
-    </div>
-
+    <div>Atualização: <span id="updated">—</span></div>
+    <div><a href="https://www.scilit.com/sources/019f25e40c1872ae9ebc9488e577dd65" target="_blank" rel="noopener">Scilit - Click here</a></div>
   </div>
-
 </div>
 
-
 <script>
-
 (async function(){
+  const DATA_URL = "./remi-scilit.json";
 
-  const DATA_URL =
-  "https://raw.githubusercontent.com/peas8810/remi_google/main/remi-scilit.json";
-
-
-  const h5El =
-    document.getElementById("h5");
-
-  const mcmEl =
-    document.getElementById("mcm");
-
-  const updEl =
-    document.getElementById("updated");
-
-  const lastEl =
-    document.getElementById("lastPoint");
-
+  const h5El = document.getElementById("h5");
+  const mcmEl = document.getElementById("mcm");
+  const updEl = document.getElementById("updated");
+  const lastEl = document.getElementById("lastPoint");
 
   const fmt = (n) => {
-
-    if(
-      n === null ||
-      n === undefined ||
-      n === ""
-    ){
-      return "—";
-    }
-
+    if(n === null || n === undefined || n === "") return "—";
     const x = Number(n);
-
-    if(Number.isNaN(x)){
-      return String(n);
-    }
-
-    return (
-      Math.abs(x) < 1 &&
-      x !== 0
-    )
-      ? x.toFixed(2)
-      : (
-          Number.isInteger(x)
-            ? String(x)
-            : x.toFixed(2)
-        );
-
+    if(Number.isNaN(x)) return String(n);
+    return (Math.abs(x) < 1 && x !== 0) ? x.toFixed(2) : (Number.isInteger(x) ? String(x) : x.toFixed(2));
   };
 
-
   try{
+    const res = await fetch(DATA_URL + "?t=" + Date.now(), { cache:"no-store" });
+    if(!res.ok) throw new Error("HTTP " + res.status);
 
-    const res = await fetch(
-      DATA_URL + "?t=" + Date.now(),
-      {
-        cache:"no-store"
-      }
-    );
+    const data = await res.json();
 
-    if(!res.ok){
-      throw new Error(
-        "HTTP " + res.status
-      );
-    }
+    h5El.textContent = fmt(data.h5_index);
+    mcmEl.textContent = fmt(data.mcm);
+    updEl.textContent = data.updated_at ?? "—";
 
+    const series = Array.isArray(data.series) ? data.series : [];
+    const labels = series.map(p => p.month);
+    const allValues = series.map(p => Number(p.value));
 
-    const data =
-      await res.json();
+    const valid = allValues.filter(v => Number.isFinite(v));
+    if(!valid.length) return;
 
+    const min = Math.min(...valid);
+    const max = Math.max(...valid);
+    const pad = (max - min) * 0.15 || 0.05;
 
-    h5El.textContent =
-      fmt(data.h5_index);
+    const lastIdx = allValues.length - 1;
+    const lastMonth = labels[lastIdx] ?? "";
+    const lastVal = allValues[lastIdx];
+    lastEl.textContent = lastMonth ? `${lastMonth} • ${fmt(lastVal)}` : fmt(lastVal);
 
-    mcmEl.textContent =
-      fmt(data.mcm);
+    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
 
-    updEl.textContent =
-      data.updated_at ?? "—";
-
-
-    const series =
-      Array.isArray(data.series)
-        ? data.series
-        : [];
-
-
-    const labels =
-      series.map(
-        p => p.month
-      );
-
-
-    const allValues =
-      series.map(
-        p => Number(p.value)
-      );
-
-
-    const valid =
-      allValues.filter(
-        v => Number.isFinite(v)
-      );
-
-
-    if(!valid.length){
-
-      lastEl.textContent =
-        "Aguardando dados";
-
-      return;
-
-    }
-
-
-    const min =
-      Math.min(...valid);
-
-    const max =
-      Math.max(...valid);
-
-    const pad =
-      (max - min) * 0.15 || 0.05;
-
-
-    const lastIdx =
-      allValues.length - 1;
-
-    const lastMonth =
-      labels[lastIdx] ?? "";
-
-    const lastVal =
-      allValues[lastIdx];
-
-
-    lastEl.textContent =
-      lastMonth
-        ? `${lastMonth} • ${fmt(lastVal)}`
-        : fmt(lastVal);
-
-
-    const accent =
-      getComputedStyle(
-        document.documentElement
-      )
-      .getPropertyValue("--accent")
-      .trim();
-
-
-    new Chart(
-      document.getElementById("spark"),
-      {
-
-        type:"line",
-
-        data:{
-
-          labels,
-
-          datasets:[{
-
-            data:allValues,
-
-            borderColor:accent,
-
-            borderWidth:2,
-
-            tension:0.35,
-
-            fill:false,
-
-            pointRadius:(ctx) =>
-              ctx.dataIndex === lastIdx
-                ? 3.6
-                : 0,
-
-            pointHoverRadius:5,
-
-            pointBackgroundColor:
-              accent,
-
-            pointBorderWidth:0
-
-          }]
-
-        },
-
-
-        options:{
-
-          responsive:true,
-
-          maintainAspectRatio:false,
-
-          plugins:{
-
-            legend:{
-              display:false
-            },
-
-            tooltip:{
-
-              displayColors:false,
-
-              callbacks:{
-
-                title:(items) =>
-                  items?.[0]?.label || "",
-
-                label:(item) =>
-                  "MCM: " + fmt(item.raw)
-
-              }
-
+    new Chart(document.getElementById("spark"), {
+      type: "line",
+      data: {
+        labels,
+        datasets: [{
+          data: allValues,
+          borderColor: accent,
+          borderWidth: 2,
+          tension: 0.35,
+          fill: false,
+          pointRadius: (ctx) => ctx.dataIndex === lastIdx ? 3.6 : 0,
+          pointHoverRadius: 5,
+          pointBackgroundColor: accent,
+          pointBorderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            displayColors: false,
+            callbacks: {
+              title: (items) => items?.[0]?.label || "",
+              label: (item) => "MCM: " + fmt(item.raw)
             }
-
-          },
-
-          scales:{
-
-            x:{
-              display:false,
-              grid:{
-                display:false
-              }
-            },
-
-            y:{
-              display:false,
-              min:min - pad,
-              max:max + pad,
-              grid:{
-                display:false
-              }
-            }
-
           }
-
+        },
+        scales: {
+          x: { display: false, grid:{display:false} },
+          y: { display: false, min: min - pad, max: max + pad, grid:{display:false} }
         }
-
       }
-    );
-
+    });
 
   }catch(e){
-
-    console.error(
-      "Erro ao carregar métricas Scilit:",
-      e
-    );
-
-    lastEl.textContent =
-      "Dados indisponíveis";
-
+    console.log(e);
+    h5El.textContent = "—";
+    mcmEl.textContent = "—";
+    lastEl.textContent = "Dados indisponíveis";
   }
-
 })();
-
 </script>
 
 </body>
